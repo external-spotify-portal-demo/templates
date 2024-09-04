@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: templates
+  annotations:
+    github.com/project-slug: 'external-spotify-portal-demo/templates'
+spec:
+  type: other
+  lifecycle: production
+  owner: test
