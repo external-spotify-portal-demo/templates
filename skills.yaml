@@ -1,0 +1,145 @@
+# default-lists.yaml
+
+skills:
+  - name: Infrastructure
+    category: DISCIPLINE
+  - name: CI/CD
+    category: DISCIPLINE
+  - name: Database Management
+    category: DISCIPLINE
+  - name: Data Engineering
+    category: DISCIPLINE
+  - name: Observability and Monitoring
+    category: DISCIPLINE
+  - name: Architecture
+    category: DISCIPLINE
+  - name: AI and ML
+    category: DISCIPLINE
+
+  - name: AWS
+    category: INFRASTRUCTURE
+    subset: SKILLS
+    disciplines:
+      - Infrastructure
+  - name: EKS
+    category: INFRASTRUCTURE
+    subset: SKILLS
+    disciplines:
+      - Infrastructure
+  - name: ArgoCD
+    category: INFRASTRUCTURE
+    subset: TOOLS
+    disciplines:
+      - Infrastructure
+      - CI/CD
+  - name: Terraform
+    category: INFRASTRUCTURE
+    subset: TOOLS
+    disciplines:
+      - Infrastructure
+
+  - name: JavaScript
+    category: LANGUAGES
+    subset: SKILLS
+    disciplines:
+      - CI/CD
+  - name: SQL
+    category: LANGUAGES
+    subset: SKILLS
+    disciplines:
+      - Database Management
+      - Data Engineering
+
+  - name: Jenkins
+    category: FRAMEWORKS
+    subset: TOOLS
+    disciplines:
+      - CI/CD
+  - name: GitHub Actions
+    category: FRAMEWORKS
+    subset: TOOLS
+    disciplines:
+      - CI/CD
+
+  - name: PostgreSQL
+    category: INFRASTRUCTURE
+    subset: SKILLS
+    disciplines:
+      - Database Management
+  - name: DynamoDB
+    category: INFRASTRUCTURE
+    subset: SKILLS
+    disciplines:
+      - Database Management
+  - name: Redshift
+    category: INFRASTRUCTURE
+    subset: SKILLS
+    disciplines:
+      - Data Engineering
+
+  - name: Datadog
+    category: INFRASTRUCTURE
+    subset: TOOLS
+    disciplines:
+      - Observability and Monitoring
+
+  - name: Data Pipeline Development
+    category: TECHNIQUES
+    subset: SKILLS
+    disciplines:
+      - Data Engineering
+  - name: Schema Design
+    category: TECHNIQUES
+    subset: SKILLS
+    disciplines:
+      - Database Management
+
+  - name: GitHub CoPilot
+    category: TOOLS
+    subset: SKILLS
+    disciplines:
+      - AI and ML
+  - name: AWS Code Whisperer
+    category: TOOLS
+    subset: SKILLS
+    disciplines:
+      - AI and ML
+  - name: Amazon Q
+    category: TOOLS
+    subset: SKILLS
+    disciplines:
+      - AI and ML
+
+locations:
+  # Canadian metro areas
+  - Toronto
+  - Montreal
+  - Vancouver
+  - Calgary
+  - Ottawa
+  - Edmonton
+  - Winnipeg
+
+  # American metro areas
+  - New York
+  - Los Angeles
+  - Chicago
+  - Houston
+  - Phoenix
+  - Philadelphia
+  - San Francisco
+  - Boston
+  - Seattle
+
+  # Brazilian metro areas
+  - São Paulo
+  - Rio de Janeiro
+  - Belo Horizonte
+  - Brasília
+  - Salvador
+  - Fortaleza
+  - Recife
+
+embedPriorityLabels:
+  - Tech Lead
+  - Company Bet Lead
