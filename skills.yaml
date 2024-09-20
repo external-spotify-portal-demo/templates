@@ -95,18 +95,18 @@ skills:
       - Database Management
 
   - name: GitHub CoPilot
-    category: TOOLS
-    subset: SKILLS
+    category: FRAMEWORKS
+    subset: TOOLS
     disciplines:
       - AI and ML
   - name: AWS Code Whisperer
-    category: TOOLS
-    subset: SKILLS
+    category: FRAMEWORKS
+    subset: TOOLS
     disciplines:
       - AI and ML
   - name: Amazon Q
-    category: TOOLS
-    subset: SKILLS
+    category: FRAMEWORKS
+    subset: TOOLS
     disciplines:
       - AI and ML
 
