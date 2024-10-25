@@ -49,7 +49,7 @@ spec:
       name: Fetch Skeleton + Template
       action: fetch:template
       input:
-        url: ./skeleton
+        url: https://github.com/external-spotify-portal-demo/templates/tree/software-catalog-onboarding/create-react-app/skeleton
         copyWithoutRender:
           - .github/workflows/*
         values:
