@@ -1,0 +1,731 @@
+{
+  "title": "Tech Radar",
+  "quadrants": [
+    {
+      "id": "languages",
+      "name": "Languages / Frameworks"
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure"
+    },
+    {
+      "id": "datastores",
+      "name": "Datastores"
+    },
+    {
+      "id": "data-management",
+      "name": "Data Management"
+    }
+  ],
+  "rings": [
+    {
+      "id": "adopt",
+      "name": "ADOPT",
+      "color": "#93c47d"
+    },
+    {
+      "id": "trial",
+      "name": "TRIAL",
+      "color": "#93d2c2"
+    },
+    {
+      "id": "assess",
+      "name": "ASSESS",
+      "color": "#fbdb84"
+    },
+    {
+      "id": "hold",
+      "name": "HOLD",
+      "color": "#efafa9"
+    }
+  ],
+  "entries": [
+    {
+      "id": "athena",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Athena",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "AWS Athena",
+      "key": "athena"
+    },
+    {
+      "id": "glue",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS Glue",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "AWS Glue",
+      "key": "glue"
+    },
+    {
+      "id": "datadog",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "DataDog",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "DataDog",
+      "key": "datadog"
+    },
+    {
+      "id": "splunk",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Splunk",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "Splunk",
+      "key": "splunk"
+    },
+    {
+      "id": "segment",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Segment",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "Segment",
+      "key": "segment"
+    },
+    {
+      "id": "airflow",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Airflow",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "Airflow",
+      "key": "airflow"
+    },
+    {
+      "id": "bigquery",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "Google BigQuery",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "Google BigQuery",
+      "key": "bigquery"
+    },
+    {
+      "id": "dynamodb",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "DynamoDB",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "DynamoDB",
+      "key": "dynamodb"
+    },
+    {
+      "id": "aurora",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Aurora (Postgres Compatible)",
+          "date": "2022-03-03T21:29:55Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "Aurora (Postgres Compatible)",
+      "key": "aurora"
+    },
+    {
+      "id": "redshift",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS Redshift",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "AWS Redshift",
+      "key": "redshift"
+    },
+    {
+      "id": "secretsManager",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS Secrets Manager",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "AWS Secrets Manager",
+      "key": "secretsManager"
+    },
+    {
+      "id": "s3",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS S3",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "AWS S3",
+      "key": "s3"
+    },
+    {
+      "id": "elasticache",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Elasticache (Redis)",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "Elasticache (Redis)",
+      "key": "elasticache"
+    },
+    {
+      "id": "dms",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS Database Migration Service",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Database Migration Service",
+      "key": "dms"
+    },
+    {
+      "id": "twilio",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Twilio SMS",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Twilio SMS",
+      "key": "twilio"
+    },
+    {
+      "id": "bedrock",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Bedrock",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Bedrock",
+      "key": "bedrock"
+    },
+    {
+      "id": "macie",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Macie",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Macie",
+      "key": "macie"
+    },
+    {
+      "id": "cognito",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Cognito",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Cognito",
+      "key": "cognito"
+    },
+    {
+      "id": "verifiedPermissions",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Verified Permissions",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Verified Permissions",
+      "key": "verifiedPermissions"
+    },
+    {
+      "id": "cloudFormation",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "AWS CloudFormation",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS CloudFormation",
+      "key": "cloudFormation"
+    },
+    {
+      "id": "cloudFront",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS CloudFront",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS CloudFront",
+      "key": "cloudFront"
+    },
+    {
+      "id": "cloudflare",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Cloudflare",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Cloudflare",
+      "key": "cloudflare"
+    },
+    {
+      "id": "eventBridge",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS EventBridge",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS EventBridge",
+      "key": "eventBridge"
+    },
+    {
+      "id": "awsBatch",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS Batch",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Batch",
+      "key": "awsBatch"
+    },
+    {
+      "id": "lambda",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS Lambda",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Lambda",
+      "key": "lambda"
+    },
+    {
+      "id": "docker",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Docker",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Docker",
+      "key": "docker"
+    },
+    {
+      "id": "ecs",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "AWS ECS",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS ECS",
+      "key": "ecs"
+    },
+    {
+      "id": "eks",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS EKS / Kubernetes",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS EKS / Kubernetes",
+      "key": "eks"
+    },
+    {
+      "id": "ecr",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS ECR",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS ECR",
+      "key": "ecr"
+    },
+    {
+      "id": "tfc",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Terraform Cloud",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Terraform Cloud",
+      "key": "tfc"
+    },
+    {
+      "id": "argocd",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "ArgoCD",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "ArgoCD",
+      "key": "argocd"
+    },
+    {
+      "id": "rabbitmq",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AmazonMQ (RabbitMQ)",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AmazonMQ (RabbitMQ)",
+      "key": "rabbitmq"
+    },
+    {
+      "id": "jenkins",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "Jenkins",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Jenkins",
+      "key": "jenkins"
+    },
+    {
+      "id": "actions",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Actions",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "GitHub Actions",
+      "key": "actions"
+    },
+    {
+      "id": "terraform",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Terraform",
+          "date": "2022-03-03T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Terraform",
+      "key": "terraform"
+    },
+    {
+      "id": "terragrunt",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "Terragrunt",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Terragrunt",
+      "key": "terragrunt"
+    },
+    {
+      "id": "go",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Go",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Go",
+      "key": "go"
+    },
+    {
+      "id": "flyway",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Flyway",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Flyway",
+      "key": "flyway"
+    },
+    {
+      "id": "pact",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Pact",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "PACT",
+      "key": "pact"
+    },
+    {
+      "id": "openApi",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "OpenAPI (Swagger)",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "OpenAPI (Swagger)",
+      "key": "openApi"
+    },
+    {
+      "id": "graphQl",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "GraphQL",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "GraphQL",
+      "key": "graphQl"
+    },
+    {
+      "id": "python",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Python",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Python",
+      "key": "python"
+    },
+    {
+      "id": "typeScript",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "TypeScript",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "TypeScript",
+      "key": "typeScript"
+    },
+    {
+      "id": "sqs",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "AWS SQS",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS SQS",
+      "key": "sqs"
+    },
+    {
+      "id": "braze",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Braze",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Braze",
+      "key": "braze"
+    },
+    {
+      "id": "blinkOps",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "BlinkOps",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "BlinkOps",
+      "key": "blinkOps"
+    },
+    {
+      "id": "launchDarkly",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "LaunchDarkly",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "LaunchDarkly",
+      "key": "launchDarkly"
+    },
+    {
+      "id": "trulio",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "Trulio",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Trulio",
+      "key": "trulio"
+    },
+    {
+      "id": "onFido",
+      "timeline": [
+        {
+          "ringId": "adopt",
+          "moved": 0,
+          "description": "OnFido",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "OnFido",
+      "key": "onFido"
+    }
+  ]
+}
