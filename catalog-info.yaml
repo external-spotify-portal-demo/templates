@@ -5,6 +5,7 @@ metadata:
   name: templates
   annotations:
     github.com/project-slug: 'external-spotify-portal-demo/templates'
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: other
   lifecycle: production
