@@ -1,0 +1,761 @@
+{
+  "title": "Tech Radar",
+  "quadrants": [
+    {
+      "id": "languages",
+      "name": "Languages / Frameworks"
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure"
+    },
+    {
+      "id": "datastores",
+      "name": "Datastores"
+    },
+    {
+      "id": "data-management",
+      "name": "Data Management"
+    }
+  ],
+  "rings": [
+    {
+      "id": "goldenTech",
+      "name": "GOLDEN TECH",
+      "color": "#93c47d"
+    },
+    {
+      "id": "trial",
+      "name": "TRIAL",
+      "color": "#93d2c2"
+    },
+    {
+      "id": "assess",
+      "name": "ASSESS",
+      "color": "#fbdb84"
+    },
+    {
+      "id": "hold",
+      "name": "HOLD",
+      "color": "#efafa9"
+    }
+  ],
+  "entries": [
+    {
+      "id": "athena",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Athena",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "AWS Athena",
+      "key": "athena"
+    },
+    {
+      "id": "glue",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS Glue",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "AWS Glue",
+      "key": "glue"
+    },
+    {
+      "id": "datadog",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "DataDog",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "DataDog",
+      "key": "datadog"
+    },
+    {
+      "id": "splunk",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Splunk",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "Splunk",
+      "key": "splunk"
+    },
+    {
+      "id": "segment",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Segment",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "Segment",
+      "key": "segment"
+    },
+    {
+      "id": "airflow",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Airflow",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "Airflow",
+      "key": "airflow"
+    },
+    {
+      "id": "bigquery",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "Google BigQuery",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "Google BigQuery",
+      "key": "bigquery"
+    },
+    {
+      "id": "dynamodb",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "DynamoDB",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "DynamoDB",
+      "key": "dynamodb"
+    },
+    {
+      "id": "aurora",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Aurora (Postgres Compatible)",
+          "date": "2022-03-03T21:29:55Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "Aurora (Postgres Compatible)",
+      "key": "aurora"
+    },
+    {
+      "id": "redshift",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS Redshift",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "AWS Redshift",
+      "key": "redshift"
+    },
+    {
+      "id": "secretsManager",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS Secrets Manager",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "AWS Secrets Manager",
+      "key": "secretsManager"
+    },
+    {
+      "id": "s3",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS S3",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "AWS S3",
+      "key": "s3"
+    },
+    {
+      "id": "elasticache",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": -1,
+          "date": "2024-06-18T16:44:55Z",
+          "description": "https://github.com/kohofinancial/documentation/blob/788b7006db9e8acd2a174c8097a960baa803ab65/architecture/adr/backend/2024-Q2-redis-v-dynamodb-cache.md"
+        }
+      ],
+      "quadrant": "datastores",
+      "title": "Elasticache (Redis)",
+      "key": "elasticache"
+    },
+    {
+      "id": "dms",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS Database Migration Service",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Database Migration Service",
+      "key": "dms"
+    },
+    {
+      "id": "bedrock",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 1,
+          "description": "AWS Bedrock",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Bedrock",
+      "key": "bedrock"
+    },
+    {
+      "id": "macie",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Macie",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Macie",
+      "key": "macie"
+    },
+    {
+      "id": "cognito",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Cognito",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Cognito",
+      "key": "cognito"
+    },
+    {
+      "id": "verifiedPermissions",
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 0,
+          "description": "AWS Verified Permissions",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Verified Permissions",
+      "key": "verifiedPermissions"
+    },
+    {
+      "id": "cloudFormation",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "AWS CloudFormation",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS CloudFormation",
+      "key": "cloudFormation"
+    },
+    {
+      "id": "cloudFront",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS CloudFront",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS CloudFront",
+      "key": "cloudFront"
+    },
+    {
+      "id": "cloudflare",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Cloudflare",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Cloudflare",
+      "key": "cloudflare"
+    },
+    {
+      "id": "eventBridge",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS EventBridge",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS EventBridge",
+      "key": "eventBridge"
+    },
+    {
+      "id": "awsBatch",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS Batch",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Batch",
+      "key": "awsBatch"
+    },
+    {
+      "id": "lambda",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS Lambda",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS Lambda",
+      "key": "lambda"
+    },
+    {
+      "id": "docker",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Docker",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Docker",
+      "key": "docker"
+    },
+    {
+      "id": "ecs",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "AWS ECS",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS ECS",
+      "key": "ecs"
+    },
+    {
+      "id": "eks",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS EKS / Kubernetes",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS EKS / Kubernetes",
+      "key": "eks"
+    },
+    {
+      "id": "ecr",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS ECR",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS ECR",
+      "key": "ecr"
+    },
+    {
+      "id": "tfc",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Terraform Cloud",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Terraform Cloud",
+      "key": "tfc"
+    },
+    {
+      "id": "argocd",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "ArgoCD",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "ArgoCD",
+      "key": "argocd"
+    },
+    {
+      "id": "rabbitmq",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AmazonMQ (RabbitMQ)",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AmazonMQ (RabbitMQ)",
+      "key": "rabbitmq"
+    },
+    {
+      "id": "jenkins",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "Jenkins",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Jenkins",
+      "key": "jenkins"
+    },
+    {
+      "id": "actions",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Actions",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "GitHub Actions",
+      "key": "actions"
+    },
+    {
+      "id": "terraform",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Terraform",
+          "date": "2022-03-03T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Terraform",
+      "key": "terraform"
+    },
+    {
+      "id": "terragrunt",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": 0,
+          "description": "Terragrunt",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Terragrunt",
+      "key": "terragrunt"
+    },
+    {
+      "id": "go",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Go",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Go",
+      "key": "go"
+    },
+    {
+      "id": "flyway",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Flyway",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Flyway",
+      "key": "flyway"
+    },
+    {
+      "id": "pact",
+      "timeline": [
+        {
+          "ringId": "trial",
+          "moved": -1,
+          "date": "2024-11-13T14:37:00Z",
+          "description": "https://github.com/kohofinancial/documentation/blob/main/architecture/adr/backend/2024-Q4-pact-revamp.md"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "PACT",
+      "key": "pact"
+    },
+    {
+      "id": "openApi",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "OpenAPI (Swagger)",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "OpenAPI (Swagger)",
+      "key": "openApi"
+    },
+    {
+      "id": "graphQl",
+      "timeline": [
+        {
+          "ringId": "hold",
+          "moved": -1,
+          "description": "GraphQL",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "GraphQL",
+      "key": "graphQl"
+    },
+    {
+      "id": "python",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Python",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "Python",
+      "key": "python"
+    },
+    {
+      "id": "typeScript",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "TypeScript",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "languages",
+      "title": "TypeScript",
+      "key": "typeScript"
+    },
+    {
+      "id": "sqs",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "AWS SQS",
+          "date": "2022-02-16T21:29:55Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS SQS",
+      "key": "sqs"
+    },
+    {
+      "id": "braze",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "Braze",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Braze",
+      "key": "braze"
+    },
+    {
+      "id": "blinkOps",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "BlinkOps",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "BlinkOps",
+      "key": "blinkOps"
+    },
+    {
+      "id": "launchDarkly",
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 0,
+          "description": "LaunchDarkly",
+          "date": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "LaunchDarkly",
+      "key": "launchDarkly"
+    },
+    {
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 1,
+          "date": "2024-08-27T09:45:00Z",
+          "description": "https://github.com/kohofinancial/documentation/blob/07b06f8c3836914df9e047865dac6d2c6b066b60/architecture/adr/major/2024-Q3-selection-of-mlops-platform-for-ai-ml-strategy.md"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "SageMaker"
+    },
+    {
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 1,
+          "date": "2024-08-27T09:46:00Z",
+          "description": "https://github.com/kohofinancial/documentation/blob/07b06f8c3836914df9e047865dac6d2c6b066b60/architecture/adr/backend/2024-Q3-ml-feature-store-selection.md"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "SageMaker Feature Store"
+    },
+    {
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 1,
+          "date": "2024-01-31T13:31:00Z",
+          "description": "https://github.com/kohofinancial/documentation/blob/main/architecture/adr/major/2024-Q2-vuln-scanning-with-inspector.md"
+        }
+      ],
+      "quadrant": "data-management",
+      "title": "AWS Inspector"
+    },
+    {
+      "timeline": [
+        {
+          "ringId": "trial",
+          "moved": 1,
+          "date": "2024-10-16T15:21:00Z",
+          "description": "https://github.com/kohofinancial/documentation/blob/main/architecture/adr/backend/2024-Q4-app-gateway-proxy.md"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "AWS API Gateway"
+    },
+    {
+      "timeline": [
+        {
+          "ringId": "goldenTech",
+          "moved": 1,
+          "date": "2024-10-16T15:21:00Z",
+          "description": "https://github.com/kohofinancial/documentation/blob/main/architecture/adr/backend/2024-Q1-orchestration-engine.md"
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Temporal"
+    },
+    {
+      "timeline": [
+        {
+          "ringId": "assess",
+          "moved": 1,
+          "date": "2024-09-04T14:27:01Z",
+          "description": ""
+        }
+      ],
+      "quadrant": "infrastructure",
+      "title": "Okta"
+    }
+  ]
+}
