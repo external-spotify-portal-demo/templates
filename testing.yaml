@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: repo1
+  description: Repo 1 description
+  annotations:
+    github.com/project-slug: fake-org/repo1
+  tags:
+  - topic1
+  - topic2
+spec:
+  type: service
+  lifecycle: production
+  owner: fake-org
