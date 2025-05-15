@@ -42,6 +42,8 @@ spec:
           type: string
           ui:field: RepoUrlPicker
           ui:options:
+            requestUserCredentials:
+              secretsKey: USER_OAUTH_TOKEN          
             allowedHosts:
               - github.com
   steps:
