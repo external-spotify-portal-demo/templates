@@ -1,0 +1,27 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: uuid-example
+  title: Example of using UUID
+  description: Derp
+spec:
+  owner: web@example.com
+  type: website
+  parameters:
+    - title: Provide some simple information
+      required:
+        - name
+      properties:
+        name:
+          title: Name
+          type: string
+  steps:
+    - id: create-uuid
+      name: Create UUID
+      action: utils:generate:uuid
+      input:
+        upperCase: true
+  output:
+    links:
+      - title: UUID
+        url: ${{ steps.create-uid.output.uuid }}
