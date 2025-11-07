@@ -1,14 +1,16 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: repo1
-  description: Repo 1 description
-  annotations:
-    github.com/project-slug: fake-org/repo1
-  tags:
-  - topic1
-  - topic2
+  name: my-service-aws
 spec:
   type: service
   lifecycle: production
-  owner: fake-org
+  owner: team-a
+  aws:
+    accounts:
+      - accountId: "123456789012"
+        environment: production
+        region: us-east-1
+      - accountId: "987654321098"
+        environment: staging
+        region: us-west-2
