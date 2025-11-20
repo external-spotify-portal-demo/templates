@@ -49,4 +49,5 @@ spec:
 
   output:
     text:
-      - "Dispatched tenant-onboard.yml for domain {{ parameters.domain_name }} on {{ parameters.cluster_name }}"
+      - title: Dispatch queued
+        content: "Dispatched tenant-onboard.yml for domain {{ parameters.domain_name }} on {{ parameters.cluster_name }}."
