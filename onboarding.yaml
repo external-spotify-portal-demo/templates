@@ -1,0 +1,52 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: dispatch-github-action
+  title: Dispatch Tenant Onboard Workflow
+  description: Collects domain_name, cluster_name, namespaces and triggers the tenant-onboard GitHub Action.
+spec:
+  owner: platform
+  type: automation
+  parameters:
+    - title: Tenant Onboard Inputs
+      required: [domain_name, cluster_name]
+      properties:
+        domain_name:
+          title: Business Domain Name
+          description: Name of the Business Domain
+          type: string
+        cluster_name:
+          title: Cluster Name
+          description: The name of a single k8s cluster
+          type: string
+          enum:
+            - sl2-ocp-prd
+            - sl2-ocp-tst
+            - usw2-rosa-nc-prd
+            - usw2-rosa-nc-tst
+            - usw2-rosa-prd-ext
+            - usw2-rosa-sbx1
+            - usw2-rosa-tst
+            - usw2-rosa-tst-bioinf
+        namespaces:
+          title: Namespaces
+          description: >-
+            List of namespaces for this domain. If more than one namespace, then separate by comma.
+          type: string
+
+  steps:
+    - id: dispatch
+      name: Dispatch GitHub Action
+      action: github:actions:dispatch
+      input:
+        repoUrl: github.com?owner=myriadgenetics&repo=platform-deploy
+        workflowId: tenant-onboard.yml
+        branchOrTagName: main
+        workflowInputs:
+          domain_name: "{{ parameters.domain_name }}"
+          cluster_name: "{{ parameters.cluster_name }}"
+          namespaces: "{{ parameters.namespaces }}"
+
+  output:
+    text:
+      - "Dispatched tenant-onboard.yml for domain {{ parameters.domain_name }} on {{ parameters.cluster_name }}"
