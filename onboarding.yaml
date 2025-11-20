@@ -7,6 +7,7 @@ metadata:
 spec:
   owner: platform
   type: automation
+
   parameters:
     - title: Tenant Onboard Inputs
       required: [domain_name, cluster_name]
@@ -43,9 +44,9 @@ spec:
         workflowId: tenant-onboard.yml
         branchOrTagName: main
         workflowInputs:
-          domain_name: "{{ parameters.domain_name }}"
-          cluster_name: "{{ parameters.cluster_name }}"
-          namespaces: "{{ parameters.namespaces }}"
+          domain_name: '{{ parameters.domain_name }}'
+          cluster_name: '{{ parameters.cluster_name }}'
+          namespaces: '{{ parameters.namespaces }}'
 
   output:
     text:
