@@ -1,0 +1,152 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: github-full-flow-demo
+  title: GitHub Service — Full Golden Path
+  description: Create a repository, register it in the catalog, open a pull request, and trigger GitHub Actions.
+  tags:
+    - demo
+    - github
+    - golden-path
+  annotations:
+    backstage.io/time-saved: PT4H
+spec:
+  owner: group:default/kubecon-squad
+  type: service
+  parameters:
+    - title: Service details
+      required:
+        - name
+        - owner
+      properties:
+        name:
+          title: Service name
+          type: string
+          description: A unique name for the new service
+          ui:field: EntityNamePicker
+          ui:autofocus: true
+        description:
+          title: Description
+          type: string
+          default: Created with Spotify Portal at KubeCon
+        owner:
+          title: Owner
+          type: string
+          description: Team that will own the service
+          ui:field: OwnerPicker
+          ui:options:
+            catalogFilter:
+              kind:
+                - Group
+    - title: Repository
+      required:
+        - repoUrl
+      properties:
+        repoUrl:
+          title: GitHub repository
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
+            requestUserCredentials:
+              secretsKey: USER_OAUTH_TOKEN
+              additionalScopes:
+                github:
+                  - workflow
+  steps:
+    - id: fetchBase
+      name: Generate service repository
+      action: fetch:template
+      input:
+        url: ./skeleton
+        targetPath: repo
+        copyWithoutTemplating:
+          - .github/workflows/*
+        values:
+          name: ${{ parameters.name }}
+          description: ${{ parameters.description }}
+          owner: ${{ parameters.owner }}
+          destination: ${{ parameters.repoUrl | parseRepoUrl }}
+
+    - id: publish
+      name: Create GitHub repository
+      action: publish:github
+      input:
+        repoUrl: ${{ parameters.repoUrl }}
+        sourcePath: repo
+        description: ${{ parameters.description }}
+        repoVisibility: public
+        defaultBranch: main
+        protectDefaultBranch: false
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
+        topics:
+          - spotify-portal
+          - kubecon-demo
+
+    - id: register
+      name: Register service in the catalog
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
+        catalogInfoPath: /catalog-info.yaml
+
+    - id: fetchChange
+      name: Prepare first service change
+      action: fetch:template
+      input:
+        url: ./pull-request
+        targetPath: pull-request
+        values:
+          name: ${{ parameters.name }}
+          owner: ${{ parameters.owner }}
+
+    - id: pullRequest
+      name: Open pull request
+      action: publish:github:pull-request
+      input:
+        repoUrl: ${{ parameters.repoUrl }}
+        sourcePath: pull-request
+        targetBranchName: main
+        branchName: portal/add-production-config
+        title: "Production readiness: add service configuration"
+        description: |
+          This pull request was opened automatically by Spotify Portal.
+
+          It demonstrates how a golden path can continue after repository creation
+          by proposing an auditable, reviewable production configuration change.
+        commitMessage: Add production service configuration
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
+
+    - id: waitForWorkflow
+      name: Wait for GitHub to index the workflow
+      action: debug:wait
+      input:
+        seconds: 3
+
+    - id: dispatchWorkflow
+      name: Trigger GitHub Actions deployment
+      action: github:actions:dispatch
+      input:
+        repoUrl: ${{ parameters.repoUrl }}
+        workflowId: portal-demo.yml
+        branchOrTagName: main
+        workflowInputs:
+          environment: demo
+        returnWorkflowRunDetails: true
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
+
+  output:
+    links:
+      - title: GitHub repository
+        url: ${{ steps.publish.output.remoteUrl }}
+        icon: github
+      - title: Pull request
+        url: ${{ steps.pullRequest.output.remoteUrl }}
+        icon: github
+      - title: GitHub Actions run
+        url: ${{ steps.dispatchWorkflow.output.workflowRunHtmlUrl }}
+        icon: github
+      - title: Open service in the catalog
+        entityRef: ${{ steps.register.output.entityRef }}
+        icon: catalog

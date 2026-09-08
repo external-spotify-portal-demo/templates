@@ -1,0 +1,5 @@
+service: ${{ values.name }}
+owner: ${{ values.owner }}
+environment: production
+replicas: 3
+readinessProbe: /health

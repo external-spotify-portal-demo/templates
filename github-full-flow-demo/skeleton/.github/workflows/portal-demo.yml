@@ -1,0 +1,32 @@
+name: Portal golden path
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Environment to demonstrate
+        required: true
+        default: demo
+
+jobs:
+  validate:
+    name: Validate generated service
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Show Portal context
+        run: |
+          echo "Repository created by Spotify Portal"
+          echo "Event: ${{ github.event_name }}"
+          echo "Environment: ${{ inputs.environment || 'automatic' }}"
+      - name: Validate catalog descriptor
+        run: test -s catalog-info.yaml
+      - name: Validate service configuration
+        run: test -s service.yaml
