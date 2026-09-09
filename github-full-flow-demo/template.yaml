@@ -43,7 +43,8 @@ spec:
         - repoUrl
       properties:
         repoUrl:
-          title: GitHub repository
+          title: New GitHub repository
+          description: Choose a repository name that does not already exist.
           type: string
           ui:field: RepoUrlPicker
           ui:options:
