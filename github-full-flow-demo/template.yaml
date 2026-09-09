@@ -53,6 +53,7 @@ spec:
               secretsKey: USER_OAUTH_TOKEN
               additionalScopes:
                 github:
+                  - repo
                   - workflow
   steps:
     - id: fetchBase
