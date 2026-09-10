@@ -52,6 +52,12 @@ spec:
               - github.com
             allowedOwners:
               - external-spotify-portal-demo
+            requestUserCredentials:
+              secretsKey: USER_OAUTH_TOKEN
+              additionalScopes:
+                github:
+                  - repo
+                  - workflow
   steps:
     - id: fetchBase
       name: Generate service repository
@@ -77,6 +83,7 @@ spec:
         repoVisibility: public
         defaultBranch: main
         protectDefaultBranch: false
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
         topics:
           - spotify-portal
           - kubecon-demo
@@ -113,6 +120,7 @@ spec:
           It demonstrates how a golden path can continue after repository creation
           by proposing an auditable, reviewable production configuration change.
         commitMessage: Add production service configuration
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
 
     - id: waitForWorkflow
       name: Wait for GitHub to index the workflow
@@ -130,6 +138,7 @@ spec:
         workflowInputs:
           environment: demo
         returnWorkflowRunDetails: true
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
 
   output:
     links:
